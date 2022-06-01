@@ -3,9 +3,8 @@ languageCode: "en-us"
 title: "Luis Sousa Blog"
 theme: 
   - PaperMod
-  - disqus
 
-disqusShortname: "luis-sousa-blog"
+disqusShortname: luis-sousa-blog
 
 paginate: 5
 
