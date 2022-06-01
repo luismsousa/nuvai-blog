@@ -1,6 +1,0 @@
-baseURL = "https://nuvai.com"
-languageCode = "en-us"
-title = "Luis Sousa - Nuvai Blog"
-theme = "PaperMod"
-
-disqusShortname = 'luis-sousa-blog'
