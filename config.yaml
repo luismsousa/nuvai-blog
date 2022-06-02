@@ -51,22 +51,22 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/safari-pinned-tab.svg"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: /favicon/apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
+    title: whoAmI?
+    subtitle: "My name is Luis Sousa and I'm a DevOps Engineer by day and homelab tinkerer by night."
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -80,15 +80,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: Welcome to my blog! This will be the home for all my musings, learning and other IT related shenanigans. If you find any of it useful, feel free to leave a comment or share what you find so more people can use it. Thanks!
 
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://twitter.com/NotReallyLuis"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/luismsousa"
 
 #  analytics:
 #    google:
@@ -104,7 +102,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/luismsousa/nuvai-blog/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -128,10 +126,10 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
