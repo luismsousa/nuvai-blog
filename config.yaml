@@ -80,9 +80,12 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog! This will be the home for all my musings, learning and other IT related shenanigans. If you find any of it useful, feel free to leave a comment or share what you find so more people can use it. Thanks!
+    Content: |
+      Welcome to my blog! **Most posts here are written by AI and edited by me** — part of my learnings from orchestrating Cursor agents and using AI as a writing and thinking partner. This is the home for DevOps, SRE, and other IT musings. The site is [open source on GitHub](https://github.com/luismsousa/nuvai-blog); if you want more detail on a topic or have questions, [open an issue or discussion](https://github.com/luismsousa/nuvai-blog/issues) there—I'm happy to expand posts or add new ones. If you find anything useful, feel free to leave a comment or share. Thanks!
 
   socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/luis-m-sousa/"
     - name: twitter
       url: "https://twitter.com/NotReallyLuis"
     - name: github
@@ -118,6 +121,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 5
     - identifier: categories
       name: categories
       url: /categories/
