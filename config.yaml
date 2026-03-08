@@ -86,8 +86,8 @@ params:
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/luis-m-sousa/"
-    - name: twitter
-      url: "https://twitter.com/NotReallyLuis"
+    - name: bluesky
+      url: "https://bsky.app/profile/nuvai.cloud"
     - name: github
       url: "https://github.com/luismsousa"
 
