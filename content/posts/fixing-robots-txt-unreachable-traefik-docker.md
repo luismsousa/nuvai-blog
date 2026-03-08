@@ -1,0 +1,116 @@
+---
+title: "Fixing 'Robots.txt Unreachable' in Google Search Console with Traefik and Docker"
+date: 2026-03-08T10:00:00Z
+draft: false
+description: "Google Search Console reports robots.txt unreachable? Two Docker Compose fixes for Traefik multi-network routing and Apache Content-Type headers."
+tags: ["WordPress", "Docker", "Traefik", "SEO", "Google Search Console"]
+---
+
+We run a travel blog ([joyofexploringtheworld.com](https://joyofexploringtheworld.com/)) on Docker Compose with Traefik v3 and Cloudflare. One morning Google Search Console showed every page blocked from indexing with "Failed: Robots.txt unreachable". The site was working fine in a browser, so what was going on?
+
+Two separate issues were conspiring to break Googlebot's ability to fetch `/robots.txt`. Here's what we found and how we fixed both.
+
+## The setup
+
+Our WordPress service sits on two Docker networks: `app-network` (shared with Traefik, Redis, imgproxy) and `db-network` (shared with MariaDB). We run two scaled WordPress containers behind Traefik's load balancer.
+
+```yaml
+wordpress:
+  build: .
+  scale: 2
+  networks:
+    - app-network
+    - db-network
+  labels:
+    - 'traefik.enable=true'
+    - 'traefik.http.routers.wordpress.entrypoints=websecure'
+    # ...
+```
+
+## Problem 1: Traefik routing to the wrong network
+
+When a Docker service connects to multiple networks, Traefik sees IP addresses for both. Our two WordPress containers had IPs on `app-network` (reachable from Traefik) and `db-network` (not reachable from Traefik). Traefik was randomly load-balancing to the `db-network` IP, causing intermittent 504 Gateway Timeouts.
+
+We confirmed this by querying Traefik's API:
+
+```bash
+curl -s http://127.0.0.1:8081/api/http/services/wordpress@docker \
+  | jq '.loadBalancer.servers'
+```
+
+The output showed four server entries — two on `172.18.x.x` (app-network, reachable) and two on `172.19.x.x` (db-network, unreachable). Every other request was timing out.
+
+### The fix
+
+Add a single label telling Traefik which Docker network to use:
+
+```yaml
+wordpress:
+  labels:
+    - 'traefik.docker.network=wordpress_app-network'
+```
+
+The value is the Docker network name as it appears in `docker network ls` — typically `<project>_<network>`, so `wordpress_app-network` for a project directory called `wordpress`. After restarting the WordPress containers, Traefik's API showed only the two correct `app-network` IPs.
+
+## Problem 2: Wrong Content-Type on robots.txt
+
+With routing fixed, we expected Google Search Console's Live Test to pass immediately. It didn't. We dug into the response headers:
+
+```bash
+curl -sI https://joyofexploringtheworld.com/robots.txt | grep -i content-type
+```
+
+The response came back as `text/html; charset=UTF-8` instead of `text/plain`. Googlebot may reject a `robots.txt` served with the wrong MIME type — the [Robots Exclusion Protocol spec](https://www.rfc-editor.org/rfc/rfc9309) requires `text/plain`.
+
+WordPress generates `/robots.txt` dynamically via PHP rewrite rules, so Apache's `FilesMatch "\.(html|htm|php)$"` rule was setting `text/html` headers. Since there's no physical `robots.txt` file on disk, `FilesMatch` on the filename doesn't work — we needed to match the request URI.
+
+### The fix
+
+We added an `<If>` directive to our Apache config that matches the original request line:
+
+```apache
+<IfModule mod_headers.c>
+    <If "%{THE_REQUEST} =~ m#/robots\.txt#">
+        Header set Content-Type "text/plain; charset=UTF-8"
+    </If>
+</IfModule>
+```
+
+We use `%{THE_REQUEST}` (the original HTTP request line) rather than `%{REQUEST_URI}` because WordPress rewrites the URI to `/index.php` before headers are finalised. `THE_REQUEST` preserves the original path.
+
+While we were in this file, we also added proper caching for sitemaps. Our `no-cache` rule for `.php` files was preventing Cloudflare from caching Rank Math's dynamic XML sitemaps:
+
+```apache
+<IfModule mod_headers.c>
+    <If "%{THE_REQUEST} =~ /sitemap.*\.xml/">
+        Header set Cache-Control "public, max-age=3600, s-maxage=3600"
+        Header unset Pragma
+        Header unset Expires
+    </If>
+</IfModule>
+```
+
+## Verifying the fix
+
+After restarting the containers and reloading Apache, we ran a quick stress test to confirm there were no more intermittent failures:
+
+```bash
+for i in $(seq 1 20); do
+  docker compose exec -T wordpress \
+    curl -so /dev/null -w '%{http_code} %{content_type}\n' \
+    -H 'User-Agent: Googlebot' http://localhost/robots.txt
+done
+```
+
+All 20 requests returned `200 text/plain; charset=UTF-8`. Google Search Console's Live Test passed shortly after, and the "Robots.txt unreachable" warning cleared within 24 hours.
+
+## What you can do
+
+1. **Always set `traefik.docker.network`** when your service connects to multiple Docker networks. Without it, Traefik may route to an unreachable IP and cause intermittent 504s.
+2. **Check `Content-Type` on `/robots.txt`** — it must be `text/plain`. Dynamic `robots.txt` (generated by WordPress, Rank Math, Yoast, etc.) is served through PHP, so filename-based Apache rules won't match.
+3. **Use `%{THE_REQUEST}`** in Apache `<If>` directives when WordPress rewrites are involved — `%{REQUEST_URI}` will show `/index.php`, not the original path.
+4. **Don't panic at GSC delays** — even after a fix, Google's Live Test can take minutes to hours to reflect reality. Verify with `curl` first.
+
+**See also**: [Running a WordPress Travel Blog on a Budget VPS: The Full Stack](/posts/wordpress-docker-compose-production-stack/) | [Rank Math Sitemap Not Loading with Traefik](/posts/rank-math-sitemap-not-loading-traefik/) | [SEO Housekeeping: Focus Keywords and Sitemaps That Match](/posts/seo-housekeeping-focus-keywords-sitemaps/)
+
+{{< cta >}}
