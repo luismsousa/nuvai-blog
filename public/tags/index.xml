@@ -1,10 +1,229 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Luis Sousa Blog</title>
     <link>https://blog.nuvai.cloud/tags/</link>
     <description>Recent content in Tags on Luis Sousa Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://blog.nuvai.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Mar 2026 10:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.nuvai.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://blog.nuvai.cloud/tags/docker/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Search Console</title>
+      <link>https://blog.nuvai.cloud/tags/google-search-console/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/google-search-console/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SEO</title>
+      <link>https://blog.nuvai.cloud/tags/seo/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/seo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Traefik</title>
+      <link>https://blog.nuvai.cloud/tags/traefik/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/traefik/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WordPress</title>
+      <link>https://blog.nuvai.cloud/tags/wordpress/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache</title>
+      <link>https://blog.nuvai.cloud/tags/apache/</link>
+      <pubDate>Sat, 07 Mar 2026 12:12:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/apache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Datadog</title>
+      <link>https://blog.nuvai.cloud/tags/datadog/</link>
+      <pubDate>Sat, 07 Mar 2026 12:12:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/datadog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monitoring</title>
+      <link>https://blog.nuvai.cloud/tags/monitoring/</link>
+      <pubDate>Sat, 07 Mar 2026 12:12:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Products</title>
+      <link>https://blog.nuvai.cloud/tags/digital-products/</link>
+      <pubDate>Sat, 07 Mar 2026 12:10:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/digital-products/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EDD</title>
+      <link>https://blog.nuvai.cloud/tags/edd/</link>
+      <pubDate>Sat, 07 Mar 2026 12:10:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/edd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://blog.nuvai.cloud/tags/security/</link>
+      <pubDate>Sat, 07 Mar 2026 12:10:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backup</title>
+      <link>https://blog.nuvai.cloud/tags/backup/</link>
+      <pubDate>Sat, 07 Mar 2026 12:08:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disaster-Recovery</title>
+      <link>https://blog.nuvai.cloud/tags/disaster-recovery/</link>
+      <pubDate>Sat, 07 Mar 2026 12:08:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/disaster-recovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hetzner</title>
+      <link>https://blog.nuvai.cloud/tags/hetzner/</link>
+      <pubDate>Sat, 07 Mar 2026 12:08:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/hetzner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MariaDB</title>
+      <link>https://blog.nuvai.cloud/tags/mariadb/</link>
+      <pubDate>Sat, 07 Mar 2026 12:08:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>https://blog.nuvai.cloud/tags/cloudflare/</link>
+      <pubDate>Sat, 07 Mar 2026 12:06:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Imgproxy</title>
+      <link>https://blog.nuvai.cloud/tags/imgproxy/</link>
+      <pubDate>Sat, 07 Mar 2026 12:06:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/imgproxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Hosted</title>
+      <link>https://blog.nuvai.cloud/tags/self-hosted/</link>
+      <pubDate>Sat, 07 Mar 2026 12:06:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/self-hosted/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cron</title>
+      <link>https://blog.nuvai.cloud/tags/cron/</link>
+      <pubDate>Sat, 07 Mar 2026 12:05:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/cron/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WP-Cron</title>
+      <link>https://blog.nuvai.cloud/tags/wp-cron/</link>
+      <pubDate>Sat, 07 Mar 2026 12:05:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/wp-cron/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://blog.nuvai.cloud/tags/troubleshooting/</link>
+      <pubDate>Sat, 07 Mar 2026 12:04:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rank Math</title>
+      <link>https://blog.nuvai.cloud/tags/rank-math/</link>
+      <pubDate>Sat, 07 Mar 2026 12:03:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/rank-math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Block Theme</title>
+      <link>https://blog.nuvai.cloud/tags/block-theme/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/block-theme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Checkout</title>
+      <link>https://blog.nuvai.cloud/tags/checkout/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/checkout/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSS</title>
+      <link>https://blog.nuvai.cloud/tags/css/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>https://blog.nuvai.cloud/tags/devops/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.nuvai.cloud/tags/performance/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://blog.nuvai.cloud/tags/redis/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sitemap</title>
+      <link>https://blog.nuvai.cloud/tags/sitemap/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/sitemap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terraform</title>
+      <link>https://blog.nuvai.cloud/tags/terraform/</link>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/terraform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Incident</title>
+      <link>https://blog.nuvai.cloud/tags/incident/</link>
+      <pubDate>Sat, 07 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>https://blog.nuvai.cloud/tags/incident/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
