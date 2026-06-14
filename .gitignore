@@ -15,3 +15,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Cursor MCP (local credentials)
+.cursor/mcp.json
