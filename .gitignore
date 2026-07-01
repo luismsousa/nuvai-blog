@@ -23,3 +23,6 @@ Thumbs.db
 .cursor/automation/renovate-review/secrets.env
 .cursor/automation/renovate-review/bootstrap.env
 .cursor/automation/renovate-review/node_modules/
+
+# Chart generator venv
+scripts/generate-post-charts/.venv/

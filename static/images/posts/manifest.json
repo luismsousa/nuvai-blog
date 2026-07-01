@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-07-01T22:48:56.447828+00:00",
+  "site": "datadoghq.eu",
+  "window": {
+    "from": "2026-06-25T00:00:00+00:00",
+    "to": "2026-07-02T00:00:00+00:00"
+  },
+  "charts": [
+    "wordpress-incident-triage-apm-not-logs/triage-signal-comparison.png",
+    "wordpress-incident-triage-apm-not-logs/imgproxy-403-vs-404.png",
+    "stale-cloudflare-apo-imgproxy-r2-migration/imgproxy-403-vs-404.png",
+    "wordpress-opcache-full-block-editor-slow/admin-vs-public-p95.png",
+    "wordpress-opcache-full-block-editor-slow/opcache-before-after.png"
+  ]
+}
