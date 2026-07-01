@@ -2,8 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.nuvai.cloud/tags/cloudflare/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.nuvai.cloud/tags/docker/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/hybrid/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/posts/hybrid-wordpress-oracle-elitedesk-ipsec/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/ipsec/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/oracle-cloud/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/posts/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/wordpress/</loc>
+    <lastmod>2026-06-13T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/datadog/</loc>
+    <lastmod>2026-06-13T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/imgproxy/</loc>
+    <lastmod>2026-06-13T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/monitoring/</loc>
+    <lastmod>2026-06-13T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/traefik/</loc>
+    <lastmod>2026-06-13T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/posts/datadog-imgproxy-bot-alerts-not-outages/</loc>
+    <lastmod>2026-06-13T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/devops/</loc>
+    <lastmod>2026-06-13T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/seo/</loc>
+    <lastmod>2026-06-13T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/posts/bulk-wp-cli-guardrails-three-reboots/</loc>
+    <lastmod>2026-06-13T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/wp-cli/</loc>
+    <lastmod>2026-06-13T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/jetpack/</loc>
+    <lastmod>2026-06-13T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/tags/performance/</loc>
+    <lastmod>2026-06-13T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.nuvai.cloud/posts/wp-admin-slow-apache-workers-jetpack-recursion/</loc>
+    <lastmod>2026-06-13T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.nuvai.cloud/posts/fixing-robots-txt-unreachable-traefik-docker/</loc>
     <lastmod>2026-03-08T10:00:00+00:00</lastmod>
@@ -11,31 +74,7 @@
     <loc>https://blog.nuvai.cloud/tags/google-search-console/</loc>
     <lastmod>2026-03-08T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.nuvai.cloud/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/posts/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/seo/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/traefik/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/wordpress/</loc>
-    <lastmod>2026-03-08T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.nuvai.cloud/tags/apache/</loc>
-    <lastmod>2026-03-07T12:12:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/datadog/</loc>
-    <lastmod>2026-03-07T12:12:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/monitoring/</loc>
     <lastmod>2026-03-07T12:12:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.nuvai.cloud/posts/datadog-apache-404-wordpress-docker/</loc>
@@ -67,12 +106,6 @@
   </url><url>
     <loc>https://blog.nuvai.cloud/tags/mariadb/</loc>
     <lastmod>2026-03-07T12:08:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/cloudflare/</loc>
-    <lastmod>2026-03-07T12:06:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/imgproxy/</loc>
-    <lastmod>2026-03-07T12:06:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.nuvai.cloud/tags/self-hosted/</loc>
     <lastmod>2026-03-07T12:06:00+00:00</lastmod>
@@ -110,9 +143,6 @@
     <loc>https://blog.nuvai.cloud/tags/css/</loc>
     <lastmod>2026-03-07T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.nuvai.cloud/tags/devops/</loc>
-    <lastmod>2026-03-07T12:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.nuvai.cloud/posts/fixing-edd-checkout-header-footer-overlap/</loc>
     <lastmod>2026-03-07T12:00:00+00:00</lastmod>
   </url><url>
@@ -123,9 +153,6 @@
     <lastmod>2026-03-07T12:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.nuvai.cloud/posts/cloudflare-www-to-apex-redirects-terraform/</loc>
-    <lastmod>2026-03-07T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.nuvai.cloud/tags/performance/</loc>
     <lastmod>2026-03-07T12:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.nuvai.cloud/posts/rank-math-sitemap-not-loading-traefik/</loc>
