@@ -1,0 +1,6 @@
+{
+  "CURSOR_API_KEY": "{{ pass://Homelab/CURSOR_API_KEY/password }}",
+  "GITHUB_TOKEN": "{{ pass://Homelab/GITHUB_TOKEN/password }}",
+  "KEYCHAIN_PASSWORD": "{{ pass://Homelab/KEYCHAIN_PASSWORD/password }}",
+  "KEYCHAIN_PATH": "/Users/luissousa/Library/Keychains/login.keychain-db"
+}

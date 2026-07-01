@@ -18,3 +18,8 @@ Thumbs.db
 
 # Cursor MCP (local credentials)
 .cursor/mcp.json
+# Cursor automation local config
+.cursor/automation/renovate-review/config.json
+.cursor/automation/renovate-review/secrets.env
+.cursor/automation/renovate-review/bootstrap.env
+.cursor/automation/renovate-review/node_modules/
